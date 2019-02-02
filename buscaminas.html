@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="buscaminas.js"></script>
+	<style type="text/css">
+		.container-fluid{
+			margin-left: 40%;
+			display: block;
+			
+		}
+		div {
+    		margin: .4em 0;
+		}
+		div label {
+			display: block;
+    		margin: .5em 0 0 0;
+		}
+		#botonc{
+			margin-right: 60%;
+			float:center;
+		}
+	
+	</style>
+</head>
+<body>
+	<div class="container-fluid">
+		<h1>BUSCAMINAS</h1>
+		<form name="formulario">
+			<div>
+				<label for="">introduce el numero de filas y columnas</label><input type="number" name="nfilas" id="nfilas"><br>
+			</div>
+			
+			<div>
+				<label for="">introduce la dificultad del 1 al 5, las minas del tablero son la dificultad multiplicadas por 5</label><input type="number" name="ndificultad" id="dificultad"><br><br>
+			</div>
+			<div>
+				<input type="button" name="crear" id="botonc" value="crear tablero" onclick="creartablero()">
+				
+			</div>
+		</form>
+		<div id="tablero"></div>
+	</div>
+</body>
+</html>
